@@ -1,0 +1,106 @@
+/* .slide-toggle{
+  display: none;
+} */
+*{
+  font-family: 'Sukhumvit Set';
+}
+.slidemenu{
+  font-family: arial, sans-serif;
+  max-width: 600px;
+  margin: 10px auto;
+  overflow: hidden;
+  margin-right: -7%;
+  margin-bottom: 3%;
+}
+
+.slidemenu label{
+  
+  text-align: center;
+  display: block;
+  float: left;
+  color: rgb(8, 8, 8);
+ 
+
+}
+
+.slidemenu label:hover{
+  cursor: pointer;
+  color: rgb(8, 8, 8);
+}
+
+.slidemenu label span{
+  display: block;
+  padding: 10px;    
+}
+
+.slidemenu label .icon{
+  font-size: 20px;
+  border: solid 2px rgb(19, 216, 78);
+  text-align: center;
+  height: 50px;
+  width: 50px;
+  display: block;
+  margin: 0 auto;
+  line-height: 50px;
+  border-radius: 50%;
+}
+/*Animations*/
+.slidemenu label, .slider .bar {
+  transition: all 500ms ease-in-out;
+  -webkit-transition: all 500ms ease-in-out;
+  -moz-transition: all 500ms ease-in-out;
+}
+
+/*Toggle*/
+
+.slidemenu .slide-toggle:checked + label{
+  opacity: 1;
+}
+
+
+
+.slidemenu #slide-item-1:checked ~ .slider .bar{ margin-left: 1% ; width: 13%;}
+.slidemenu #slide-item-2:checked ~ .slider .bar{ margin-left: 15%;width: 17%; }
+.slidemenu #slide-item-3:checked ~ .slider .bar{ margin-left: 33.2%;width: 22%; }
+.slidemenu #slide-item-4:checked ~ .slider .bar{ margin-left: 40%;width: 13%; }
+.slidemenu #slide-item-5:checked ~ .slider .bar{ margin-left: 72%;width: 11%; }
+.slidemenu #slide-item-6:checked ~ .slider .bar{ margin-left: 85%; width: 14%;}
+
+/*Bar Style*/
+  
+.slider{
+  width: 100%;
+  height: 5px;
+  display: block;
+  background: rgb(255, 255, 255);
+  margin-top: -15px;
+  border-radius: 5px;
+}
+
+.slider .bar{
+  width: 20%;
+  height: 5px;
+  background: rgb(31, 156, 20);
+  border-radius: 5px;
+}
+
+.img {
+    
+  width: 172px;
+  height: 83px;
+  margin-left: -35%;
+
+  -webkit-filter: drop-shadow(5px 5px 52x rgb(153, 152, 152));
+  filter: drop-shadow(3px 3px 2px rgb(172, 170, 170));
+  }
+  .header {
+    padding-left: 7%;
+    padding-top: 0.5%;
+    color: black;
+    
+  }
+  /* Container for flexboxes */
+  section {
+    display: -webkit-flex;
+    display: flex;
+  }

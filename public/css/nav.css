@@ -1,0 +1,115 @@
+*{
+  font-family: 'Sukhumvit Set';
+}
+.overlay {
+  height: 0%;
+  width: 100%;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: rgb(0,0,0);
+  background-color: rgba(0,0,0, 0.9);
+  overflow-y: hidden;
+  transition: 0.5s;
+}
+
+.overlay-content {
+  position: relative;
+  top: 25%;
+  width: 100%;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.overlay a {
+  padding: 8px;
+  text-decoration: none;
+  font-size: 36px;
+  color: #f1f1f1;
+  display: block;
+  transition: 0.3s;
+}
+
+.overlay a:hover, .overlay a:focus {
+  color: #f1f1f1;
+}
+
+.overlay .closebtn {
+  position: absolute;
+  top: 20px;
+  right: 45px;
+  font-size: 60px;
+}
+
+@media screen and (max-height: 450px) {
+  .overlay {overflow-y: auto;}
+  .overlay a {font-size: 20px}
+  .overlay .closebtn {
+  font-size: 40px;
+  top: 15px;
+  right: 35px;
+  }
+}
+/* 
+.position-ham{
+  margin-left: 95%; 
+} */
+.nav-t
+{
+  width: 50%;
+  margin-left: 41%;
+  margin-top: 1%;
+}
+.phase-nav{
+  margin-right: 1%;
+ 
+}
+
+.nav1{
+  position: absolute;
+    /* width: 30%; */
+    right: 0%;
+    top: 0px;
+    width: 145%;
+    display: block;
+    transition: top 0.3s;
+    margin-right: -58%;
+    color: black;
+    font-size: 25px;
+    font-weight: 550;
+    text-shadow: #2f2e2ed4 0.1em 0.1em 0.2em;
+    background-image: linear-gradient(to right, #ffffff00, #e3e3e321, #fff4f4ba, #ede5e5, #fffdfd);
+}
+
+
+/* //// */
+
+#navbar {
+  background-color: #333;
+  position: fixed;
+  top: -50px;
+  width: 100%;
+  display: block;
+  transition: top 0.3s;
+}
+
+#navbar a {
+  float: right;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 15px;
+
+  text-decoration: none;
+  font-size: 17px;
+}
+
+#navbar a:hover {
+  background-color: #ddd;
+  color: black;
+}
+/* ///// */
+html {
+  scroll-behavior: smooth;
+}

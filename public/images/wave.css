@@ -1,0 +1,18 @@
+* {
+    margin: 0;
+    padding: 0;
+  }
+  
+  .div1 {
+    background-image: url('../images/page2.jpg');
+
+
+    height: 100vh;
+  }
+  
+  .box {
+    margin-top:-5.8%;
+    background-image: url("../images/bg_songkhla.gif");
+    height: 125VH;
+    clip-path: url(#wave);
+  }
