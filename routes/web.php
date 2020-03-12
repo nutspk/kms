@@ -11,12 +11,7 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
-
-
-
+Route::get('/', 'FeedsController@news');
 
 Route::get('/index', 'FeedsController@news');
 Route::get('/FeedNews', 'FeedsController@ActivityNew');
@@ -109,21 +104,21 @@ Route::get('/addtype', 'TypeNewsController@addtype'); //fromaddtype
 Route::post('/addtypenews', 'TypeNewsController@addtypenews'); //fromaddtype
 
 // TypeNewsController//
-Route::get('/adddata', 'NewsListController@adddata'); //fromadddata 
+Route::get('/adddata', 'NewsListController@adddata'); //fromadddata
 Route::post('/adddata', 'NewsListController@adddatafrom'); //adddatafrom
 
 
-Route::get('/addlocation', 'TravelController@addlocationform'); //fromadddata 
-Route::post('/addlocation', 'TravelController@addlocation'); //fromadddata 
+Route::get('/addlocation', 'TravelController@addlocationform'); //fromadddata
+Route::post('/addlocation', 'TravelController@addlocation'); //fromadddata
 
 ////ส่วนของ Lv1
-Route::get('/addmenumain', 'MainmenuController@addmenu'); //fromadddata 
-Route::post('/addmenumain', 'MainmenuController@addmenumain'); //fromadddata 
-Route::get('/showmenumain', 'MainmenuController@showmenumain'); //showdata 
+Route::get('/addmenumain', 'MainmenuController@addmenu'); //fromadddata
+Route::post('/addmenumain', 'MainmenuController@addmenumain'); //fromadddata
+Route::get('/showmenumain', 'MainmenuController@showmenumain'); //showdata
 
 /////ส่วนของ Lv2
-Route::get('/addsubcoures', 'SubcouresController@addsub'); //fromadddata 
-Route::post('/addsubcoures', 'SubcouresController@addsubcoures'); //fromadddata 
+Route::get('/addsubcoures', 'SubcouresController@addsub'); //fromadddata
+Route::post('/addsubcoures', 'SubcouresController@addsubcoures'); //fromadddata
 Route::get('/showsubcoures/{id}','SubcouresController@showsubcoures');
 
 // Route::get('/showsubcoures','SubcouresController@showsubcoures');
