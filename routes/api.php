@@ -13,7 +13,7 @@ use Illuminate\Http\Request;
 |
 */
 
-Route::get('bar', function () {
+Route::post('bar', function () {
     $datas = file_get_contents('php://input');
 	    $curl = curl_init();
 
